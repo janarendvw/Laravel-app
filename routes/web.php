@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Events\StatementPrepared;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PlantController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/plants', [PlantController::class, 'index']);
