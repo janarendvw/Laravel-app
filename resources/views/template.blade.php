@@ -12,6 +12,6 @@
 
 </head>
 <body>
-@yield('plants')
+
 </body>
 </html>
